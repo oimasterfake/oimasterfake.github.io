@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oimasterfake.github.io</id>
     <title>OI-Master</title>
-    <updated>2020-12-19T08:52:12.076Z</updated>
+    <updated>2020-12-19T08:57:44.327Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oimasterfake.github.io"/>
     <link rel="self" href="https://oimasterfake.github.io/atom.xml"/>
@@ -16,7 +16,10 @@
         <link href="https://oimasterfake.github.io/post/oi-master-oj-contest-1-zong-jie-yu-ti-jie/">
         </link>
         <updated>2020-12-19T07:46:47.000Z</updated>
+        <summary type="html"><![CDATA[<p>本文是 OI-Master OJ Contest 1 的总结与题解。本场比赛在各种各样的帮助下成功举行。</p>
+]]></summary>
         <content type="html"><![CDATA[<p>本文是 OI-Master OJ Contest 1 的总结与题解。本场比赛在各种各样的帮助下成功举行。</p>
+<!-- more -->
 <h2 id="成绩">成绩</h2>
 <figure data-type="image" tabindex="1"><img src="https://oimasterfake.github.io/post-images/1608364196450.png" alt="成绩" loading="lazy"></figure>
 <table>
@@ -229,7 +232,7 @@ int main(){
 }
 </code></pre>
 <p>是不是大模拟呢？<s>我是老农民，疯牛满地跑，农民傻了</s></p>
-<h3 id="第三题">第三题</h3>
+<h3 id="c">C</h3>
 <p>贪心。<br>
 首先可以发现，重合的部分相当于没变，所以不用考虑。<br>
 记得当时某验题人兴奋地说：</p>
