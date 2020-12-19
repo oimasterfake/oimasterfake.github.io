@@ -1,0 +1,497 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OI-Master OJ Contest 1 总结与题解 | OI-Master</title>
+<link rel="shortcut icon" href="http://localhost:4000/favicon.ico?v=1608367341902">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="http://localhost:4000/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="OI-Master OJ Contest 1 总结与题解 | OI-Master - Atom Feed" href="http://localhost:4000/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="本文是 OI-Master OJ Contest 1 的总结与题解。本场比赛在各种各样的帮助下成功举行。
+成绩
+
+
+
+
+名次
+昵称
+得分
+
+
+
+
+1
+oimaster
+3
+
+
+2
+ZXXZXX
+2
+
+
+3
+CLTRAY
+1
+
+
+
+
+
+
+题目..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="http://localhost:4000">
+  <img class="avatar" src="http://localhost:4000/images/avatar.png?v=1608367341902" alt="">
+  </a>
+  <h1 class="site-title">
+    OI-Master
+  </h1>
+  <p class="site-description">
+    屁话少说，放码过来
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="http://localhost:4000/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="http://localhost:4000/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="http://localhost:4000/tags" class="menu">
+          标签
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              OI-Master OJ Contest 1 总结与题解
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-12-19
+              </span>
+              <span>
+                11 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content">
+                <p>本文是 OI-Master OJ Contest 1 的总结与题解。本场比赛在各种各样的帮助下成功举行。</p>
+<h2 id="成绩">成绩</h2>
+<figure data-type="image" tabindex="1"><img src="http://localhost:4000/post-images/1608364196450.png" alt="成绩" loading="lazy"></figure>
+<table>
+<thead>
+<tr>
+<th>名次</th>
+<th>昵称</th>
+<th>得分</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>oimaster</td>
+<td>3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>ZXXZXX</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>CLTRAY</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>题目</th>
+<th>首A</th>
+<th>用时（分钟）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>CLTRAY</td>
+<td>27</td>
+</tr>
+<tr>
+<td>B</td>
+<td>oimaster</td>
+<td>130</td>
+</tr>
+<tr>
+<td>C</td>
+<td>tommychen</td>
+<td>118</td>
+</tr>
+<tr>
+<td>D</td>
+<td>无</td>
+<td>无</td>
+</tr>
+</tbody>
+</table>
+<p>恭喜这些同学！</p>
+<h2 id="出题人想说">出题人想说</h2>
+<p>比赛第四题严重超纲，所以就先不讲此题了。<br>
+等半年再讲吧……<br>
+具体可以看 ducati 喷的话：<br>
+<img src="http://localhost:4000/post-images/1608364682442.png" alt="ducati 喷比赛" loading="lazy"></p>
+<h2 id="题解">题解</h2>
+<h3 id="a">A</h3>
+<p>简单数学问题啊，为什么都没有在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>10</mn></mrow><annotation encoding="application/x-tex">10</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span></span></span></span> 分钟内切掉（恼<br>
+假设字符串下标从 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 开始，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>s</mi><mi>i</mi></msub><mo separator="true">,</mo><msub><mi>s</mi><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow></msub><mo separator="true">,</mo><msub><mi>s</mi><mrow><mi>i</mi><mo>+</mo><mn>2</mn></mrow></msub><mo separator="true">,</mo><msub><mi>s</mi><mrow><mi>i</mi><mo>+</mo><mn>3</mn></mrow></msub></mrow><annotation encoding="application/x-tex">s_i,s_{i+1},s_{i+2},s_{i+3}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.638891em;vertical-align:-0.208331em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault">s</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.311664em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mbin mtight">+</span><span class="mord mtight">3</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.208331em;"><span></span></span></span></span></span></span></span></span></span> 是 <code>noip</code>，那么这个子串前面的字符数（包括 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span>）共 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">i+1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span></span></span></span> 个字符，后面（包括结尾）有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∣</mi><mi>s</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi>i</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">|s|-i-3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathdefault">s</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span> 个字符。<br>
+那么用前面的字符数乘后面的字符数就可以得出包含这个子串 <code>noip</code> 的字符串数量：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>⋅</mo><mo>(</mo><mi mathvariant="normal">∣</mi><mi>s</mi><mi mathvariant="normal">∣</mi><mo>−</mo><mi>i</mi><mo>−</mo><mn>3</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(i+1)\cdot(|s|-i-3)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">∣</span><span class="mord mathdefault">s</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span></span></p>
+<pre><code class="language-c++">#include&lt;iostream&gt;
+using namespace std;
+int main(){
+	string s;
+	cin&gt;&gt;s;
+	int sum=0;
+	for(int i=0;i+3&lt;s.size();++i)
+		if(s[i]=='n'&amp;&amp;s[i+1]=='o'&amp;&amp;s[i+2]=='i'&amp;&amp;s[i+3]=='p')
+			sum+=(i+1)*(s.size()-i-3);
+	cout&lt;&lt;sum;
+}
+</code></pre>
+<p>不过很抱歉，这样并不能过。我们分析一下为什么。<br>
+当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span> 为 <code>noipnoip</code> 时，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>i</mi><mo separator="true">,</mo><mi>j</mi><mo>)</mo><mo>=</mo><mo>(</mo><mn>0</mn><mo separator="true">,</mo><mn>7</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(i,j)=(0,7)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05724em;">j</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">7</span><span class="mclose">)</span></span></span></span> 这个子串被算了 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">2</span></span></span></span> 次。<br>
+为了解决这个问题，我们需要记录下后面一个 <code>noip</code> 出现的位置以防止重复。我们令 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>a</mi><mi>s</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">last</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span></span></span></span> 为后面一个 <code>noip</code> 出现的下标。公式变为：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>i</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>⋅</mo><mo>(</mo><mi>l</mi><mi>a</mi><mi>s</mi><mi>t</mi><mo>−</mo><mi>i</mi><mo>−</mo><mn>3</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">(i+1)\cdot(last-i-3)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.74285em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">i</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mclose">)</span></span></span></span></span></p>
+<p>这样的数学公式是可以过的。不过需要一点优化，否则后面的 <code>noip</code> 要很长时间才能找到。<br>
+决定倒推。边扫边记，复杂度为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">O</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mi mathvariant="normal">∣</mi><mi>s</mi><mi mathvariant="normal">∣</mi><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{O}\left(|s|\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">O</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord">∣</span><span class="mord mathdefault">s</span><span class="mord">∣</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span>。</p>
+<pre><code class="language-c++">#include&lt;iostream&gt;
+using namespace std;
+int main(){
+	string s;
+	cin&gt;&gt;s;
+	int last=s.size();
+	int sum=0;
+	for(int i=s.size()-4;i&gt;=0;--i)
+		if(s[i]=='n'&amp;&amp;s[i+1]=='o'&amp;&amp;s[i+2]=='i'&amp;&amp;s[i+3]=='p'){
+			sum+=(i+1)*(last-i-3);
+			last=i+3;
+		}
+	cout&lt;&lt;sum;
+}
+</code></pre>
+<p>然后恭喜，不开 long long 见祖宗！</p>
+<pre><code class="language-c++">#include&lt;iostream&gt;
+#define int long long 
+using namespace std;
+signed main(){
+	string s;
+	cin&gt;&gt;s;
+	int last=s.size();
+	int sum=0;
+	for(int i=s.size()-4;i&gt;=0;--i)
+		if(s[i]=='n'&amp;&amp;s[i+1]=='o'&amp;&amp;s[i+2]=='i'&amp;&amp;s[i+3]=='p'){
+			sum+=(i+1)*(last-i-3);
+			last=i+3;
+		}
+	cout&lt;&lt;sum;
+}
+</code></pre>
+<p><s>第一题终于过了qaq</s></p>
+<h3 id="b">B</h3>
+<p>比赛开始后一直无人 AC，于是我扔了个提示。<br>
+<img src="http://localhost:4000/post-images/1608365625404.png" alt="大模拟" loading="lazy"><br>
+然后半小时后后我又发了个消息。<br>
+<img src="http://localhost:4000/post-images/1608365740808.png" alt="写模拟" loading="lazy"></p>
+<blockquote>
+<p>大家好，欢迎来观看 OI-Master 的文章。今天 OI-Master 给大家讲一讲参赛者们直接写大模拟而一点也不优化是怎么回事？相信大家都很熟悉参赛者们，可是参赛者们直接写大模拟而一点也不优化又是怎么回事呢？下面就让 OI-Master 带大家了解一下吧。其实啊，参赛者们直接写大模拟而一点也不优化就是直接写大模拟而一点也不优化的参赛者们。直接写大模拟而一点也不优化的参赛者们就相当于参赛者们的直接写大模拟而一点也不优化。大家可能会感到很惊讶，直接写大模拟而一点也不优化的参赛者们怎么会这样的直接写大模拟而一点也不优化？但事实就是这样， OI-Master 也感到非常惊讶。<br>
+那么这就是关于参赛者们非常直接写大模拟而一点也不优化的事情了，大家有什么想法呢？欢迎在评论区告诉 OI-Master 一起讨论哦。<br>
+<s>对不起这里没有评论区</s><br>
+所以我说大模拟难道就代表一点优化都不能出现？提交前复杂度要算算啊（😠<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>×</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\times2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72777em;vertical-align:-0.08333em;"></span><span class="mord">×</span><span class="mord">2</span></span></span></span><br>
+<img src="http://localhost:4000/post-images/1608365991975.jpg" alt="doge" loading="lazy"><br>
+朴素想法：每个字符都在键盘中查找。如果是大写字母就再查找一遍 <code>Shift</code>。<br>
+可是你难道不觉得这太慢了吗？<s>您说大模拟我就没注意</s><br>
+这时候发现每个字符都要从头在键盘里找一遍，过程是完全一样的。难道不能预处理么？<br>
+<img src="http://localhost:4000/post-images/1608365991975.jpg" alt="doge" loading="lazy"><br>
+好了您可以过了。记得用 <code>double</code>！</p>
+</blockquote>
+<pre><code class="language-c++">#include&lt;iostream&gt;
+#include&lt;cstring&gt;
+#include&lt;cmath&gt;
+#include&lt;vector&gt;
+using namespace std;
+double dis(double x1,double y1,double x2,double y2){
+	return sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+}
+int main(){
+	int n,m;
+	cin&gt;&gt;n&gt;&gt;m;
+	double x;
+	cin&gt;&gt;x;
+	char a[n+1][m+1];
+	for(int i=1;i&lt;=n;++i)
+		for(int j=1;j&lt;=m;++j)
+			cin&gt;&gt;a[i][j];
+	bool shift=false;
+	for(int i=1;i&lt;=n;++i)
+		for(int j=1;j&lt;=m;++j)
+			if(a[i][j]=='S'){
+				shift=true;
+				break;
+			}
+	bool ks[200];
+	memset(ks,0,sizeof(ks));
+	for(int i=1;i&lt;=n;++i)
+		for(int j=1;j&lt;=m;++j)
+			if(a[i][j]!='S')
+				ks[a[i][j]]=ks[a[i][j]-('a'-'A')]=true;
+	string s;
+	cin&gt;&gt;s;
+	int k=s.size();
+	if(shift==false){
+		bool flag=false;
+		for(int i=0;i&lt;k;++i)
+			if(s[i]&gt;='A'&amp;&amp;s[i]&lt;='Z'){
+				flag=true;
+				break;
+			}
+		if(flag==true){
+			cout&lt;&lt;-1&lt;&lt;endl;
+			return 0;
+		}
+	}
+	for(int i=0;i&lt;k;++i)
+		if(ks[s[i]]==false){
+			cout&lt;&lt;-1&lt;&lt;endl;
+			return 0;
+		}
+	vector&lt;pair&lt;int,int&gt; &gt;v;
+	for(int i=1;i&lt;=n;++i)
+		for(int j=1;j&lt;=m;++j)
+			if(a[i][j]=='S')
+				v.push_back(make_pair(i,j));
+	double shf[200];
+	for(int i=1;i&lt;=199;++i)
+		shf[i]=10000000000;
+	for(int i=1;i&lt;=n;++i)
+		for(int j=1;j&lt;=m;++j)
+			if(a[i][j]!='S')
+				for(int vi=0;vi&lt;v.size();++vi)
+					shf[a[i][j]]=min(shf[a[i][j]],dis(i,j,v[vi].first,v[vi].second));
+	int tot=0;
+	for(int i=0;i&lt;k;++i)
+		if(s[i]&gt;='A'&amp;&amp;s[i]&lt;='Z'&amp;&amp;shf[s[i]-('A'-'a')]&gt;x)
+			++tot;
+	cout&lt;&lt;tot&lt;&lt;endl;
+}
+</code></pre>
+<p>是不是大模拟呢？<s>我是老农民，疯牛满地跑，农民傻了</s></p>
+<h3 id="第三题">第三题</h3>
+<p>贪心。<br>
+首先可以发现，重合的部分相当于没变，所以不用考虑。<br>
+记得当时某验题人兴奋地说：</p>
+<blockquote>
+<p>我知道了！重合的部分不算！我马上就做出来了！</p>
+</blockquote>
+<p>然后我回复：</p>
+<blockquote>
+<p>这是第 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span> 步就能知道的事吧……您还得再想想啊！</p>
+</blockquote>
+<p>然后验题人写了个代码，过了。</p>
+<pre><code class="language-c++">#include&lt;bits/stdc++.h&gt;
+#define int long long
+using namespace std;
+signed main() {
+	int n,sum=0;
+	cin&gt;&gt;n;
+	int a[n+1]; 
+	for(int i=1;i&lt;=n;i++){
+		cin&gt;&gt;a[i];
+		sum+=a[i];
+	}
+	int fq[n+2],bq[n+2];
+	fq[0]=0;
+	for(int i=1;i&lt;=n;i++){
+		fq[i]=fq[i-1]-a[i];
+	}
+	bq[n+1]=0;
+	for(int i=n;i&gt;=1;i--){
+		bq[i]=bq[i+1]-a[i];
+	}
+	int fm[n+2],bm[n+2];
+	fm[0]=0;
+	for(int i=1;i&lt;=n;i++){
+		fm[i]=max(fq[i],fm[i-1]);
+	}
+	bm[n+1]=0; 
+	for(int i=n;i&gt;=1;i--){
+		bm[i]=max(bq[i],bm[i+1]);
+	}
+	int maxv=0;
+	for(int i=0;i&lt;=n;i++){
+		maxv=max(maxv,fm[i]+bm[i+1]); 
+	}
+	cout&lt;&lt;2*maxv+sum;
+	return 0;
+}
+</code></pre>
+<p>但是这明显不是我要的算法，于是想办法卡掉这个。于是本题内存成为了 <code>2MB</code>。<br>
+强制在线，怎么办呢？没事，先假装可以存下来整个数列。<br>
+我们把数列分成 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>3</mn></mrow><annotation encoding="application/x-tex">3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">3</span></span></span></span> 份 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a,b,c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span></span></span></span>。其中，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> 表示左边选中的前缀元素的和，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span> 表示从右选中的后缀的和，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span> 表示没选中的和。<br>
+那么修改后的数列的和将会是：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mo>−</mo><mi>a</mi><mo>−</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">c-a-b
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span></span></p>
+<p>接下来我们知道，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a,b,c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span></span></span></span> 是序列的一部分的和，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi></mrow><annotation encoding="application/x-tex">a</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span></span></span></span> 代表的段加 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span> 的段再加 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi></mrow><annotation encoding="application/x-tex">b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span> 代表的肯定是原来完整的串（可能有点绕，这是分过的：<code>a 代表的段/加/c 的段/再加/b 代表的/肯定是/原来完整的串</code>）。<br>
+假设整个数列的和为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span>，所以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a,c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span></span></span></span> 就为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><mo>−</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">s-b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span></span></span></span>。<br>
+那么整个式子变成了</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi><mo>−</mo><mo>(</mo><mi>s</mi><mo>−</mo><mi>c</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">c-(s-c)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66666em;vertical-align:-0.08333em;"></span><span class="mord mathdefault">c</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">c</span><span class="mclose">)</span></span></span></span></span></p>
+<p>这时候，我们知道 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">s</span></span></span></span> 输入后是一个常量，我们无法改动。不过我们发现，当 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span> 变大时，这道式子的被减数增大，减数会变小，那么整个式子的结果会变大。<br>
+于是为了这个结果最大，我们要尽量让 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">c</span></span></span></span> 大。<br>
+然后想到了什么？<s>暴力</s>最大子段和！<br>
+我们可以一边解决最大字段和，同时计算数列和。这样可以在线性时间内通过。</p>
+<pre><code class="language-c++">#include&lt;iostream&gt;
+using namespace std;
+int main(){
+    int n,x,s,a,ma;
+    s=0;
+    a=0;
+    ma=0;
+    cin&gt;&gt;n;
+    for(int i=1;i&lt;=n;++i){
+        cin&gt;&gt;x;
+        s+=x;
+        a+=x;
+        if(a&gt;ma)
+            ma=a;
+        if(a&lt;0)
+            a=0;
+    }
+    cout&lt;&lt;ma-(s-ma);
+}
+</code></pre>
+<p>时间复杂度 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">O</mi><mo>⁡</mo><mrow><mo fence="true">(</mo><mi>n</mi><mo fence="true">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{O}\left(n\right)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop"><span class="mord mathrm">O</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mord mathdefault">n</span><span class="mclose delimcenter" style="top:0em;">)</span></span></span></span></span>。</p>
+<h3 id="d">D</h3>
+<p>半年后您再找我，先开个坑。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%88%90%E7%BB%A9">成绩</a></li>
+<li><a href="#%E5%87%BA%E9%A2%98%E4%BA%BA%E6%83%B3%E8%AF%B4">出题人想说</a></li>
+<li><a href="#%E9%A2%98%E8%A7%A3">题解</a>
+<ul>
+<li><a href="#a">A</a></li>
+<li><a href="#b">B</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E9%A2%98">第三题</a></li>
+<li><a href="#d">D</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Copyright 2020 OI-Master
+  <a class="rss" href="http://localhost:4000/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
